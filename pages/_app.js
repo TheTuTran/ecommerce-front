@@ -1,9 +1,11 @@
+import { CartContextProvider } from "@/components/CartContext";
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
     body {
         padding: 0;
-        margin:0;
+        margin: 0;
+        background-color: #f0f0f0;
         font-family: 'Roboto', sans-serif;
     }
 `;
@@ -12,7 +14,9 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <GlobalStyles />
-      <Component {...pageProps} />
+      <CartContextProvider>
+        <Component {...pageProps} />
+      </CartContextProvider>
     </>
   );
 }
