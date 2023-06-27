@@ -12,7 +12,7 @@ const Bg = styled.div`
   padding: 50px 0;
 `;
 const Title = styled.h1`
-  marggin: 0;
+  margin: 0;
   font-weight: normal;
   font-size: 3rem;
 `;
