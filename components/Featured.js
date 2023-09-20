@@ -37,6 +37,9 @@ const ButtonsWrapper = styled.div`
   display: flex;
   gap: 10px;
 `;
+const Img = styled.img`
+  height: 40vh;
+`;
 
 export default function Featured({ product }) {
   const { addProduct } = useContext(CartContext);
@@ -68,7 +71,7 @@ export default function Featured({ product }) {
             </div>
           </Column>
           <Column>
-            <img src="https://nextjs-ecommerce-admin.s3.amazonaws.com/1687760512307.webp" />
+            <Img src="https://nextjs-ecommerce-admin.s3.amazonaws.com/1695173468952.jpg" />
           </Column>
         </ColumnsWrapper>
       </Center>
